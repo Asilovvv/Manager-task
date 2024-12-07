@@ -1,0 +1,145 @@
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: #fff;
+  background-color: #0a0825;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #eb2f96;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #eb2f96;
+}
+
+input {
+  padding: 10px;
+  border: 2px solid #6200ea;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 300px;
+  max-width: 100%;
+  margin-bottom: 10px;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+input:focus {
+  border-color: #bb86fc;
+  box-shadow: 0 0 8px rgba(98, 0, 234, 0.8);
+  background-color: #2c2c2c;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  font-size: 20px;
+  padding: 20px;
+  font-family: lobster
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 600;
+  margin: 0;
+  color: var(--primary-color);
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.task-container {
+  width: 100%;
+  max-width: 800px;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 100px;
+}
+
+.field {
+  background-color: #1a1a1a;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 20px 25px;
+  width: 400px;
+  font-size: 24px;
+  color: white;
+  transition: border-color 0.3s ease;
+  margin-top: 10px;
+  height: 100px;
+  padding: 0.8rem;
+  max-width: 100%;
+}
+
+.field:focus {
+  border-color: #eb2f96;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid #fff;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 5px;
+}
+
+button:hover {
+  background-color: #eb2f96;
+  border-color: white;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-color: #ffffff;
+    --primary-color: #213547;
+  }
+
+  a:hover {
+    color: #eb2f96;
+  }
+
+  button {
+    background-color: #f9f9f9;
+    color: #1a1a1a;
+  }
+
+  .field {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    color: #1a1a1a;
+  }
+}
